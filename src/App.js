@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+// import SimpleCalculator from "./components/SimpleCalculator";
+import ListStudents from "./components/ListStudents";
+import {Container} from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        {/*<SimpleCalculator title={"Exercise 1: Simple Calculator"}/>*/}
+        <Container>
+                <ListStudents props={"Exercise 2: List Students"}/>
+        </Container>
+      </>
   );
 }
 
